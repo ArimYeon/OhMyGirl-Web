@@ -1,0 +1,197 @@
+```css
+body{margin:0;}
+section{margin-top: 100px; text-align:center;}
+p{font-family:'Montserrat', sans-serif, 'Malgun Gothic','맑은 고딕';}
+/*about 각 타이틀*/
+.title{
+    font-size:22px;
+    color:#f594a2;
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    font-weight: 900;
+}
+/*about 각 내용*/
+.context_wrap{
+    display:inline-block;
+    border-top: 3px solid #f594a2;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 18px;
+}
+/*로고*/
+.logo{margin-top: 80px;}
+.logo img{
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*데뷔*/
+#debut_text{margin-top:30px;}
+/*팬덤*/
+#fandom_text{margin-top:30px;}
+.fandom img{width: 300px;}
+/*sns*/
+#sns_icons{margin-top: 50px;}
+#sns_icons a{width:50px;}
+#sns_icons a img{
+    width:50px;
+    margin-left:15px;
+    margin-right:15px;
+}
+.sns{
+    margin-bottom:100px;
+    margin-top:80px;
+}
+/*member*/
+#pro_list{
+    width:900px;
+    margin-left: auto;
+  	margin-right: auto;
+}
+#pro_list p{
+    font-size:14px;
+}
+#pro_list li{
+    display: inline-block;
+    margin:0 22px;
+}
+#pro_list .pro_info{
+    padding-top:6px;
+    text-align:left;
+    border-top:2px solid #aa85e6;
+    margin-bottom: 50px;
+}
+#pro_list .pro_info p span{
+    color:#6d6e71;
+}
+.name{
+    font-weight: bold;
+}
+aside{
+    position:absolute;
+    position:fixed;
+    margin-top: -1000px;
+    margin-left: 50px;
+    font-family:'Montserrat', sans-serif, 'Malgun Gothic','맑은 고딕';
+}
+#personal_sns_list{
+    display: inline-block;
+    border: 3px solid #f594a2;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+#personal_sns_list li{
+   	list-style:none;
+   	padding-left:0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+#personal_sns_list li a{text-decoration:none;}
+#personal_sns_list li a:link{color: #000000;}
+#personal_sns_list li a:visited{color: #000000;}
+#personal_sns_list li a:active{color: #aa85e6;}
+#personal_sns_list li a:hover{color: #aa85e6;}
+#xbtn{
+    width: 10px;
+    height: 10px;
+}
+#sns_menu{
+    display: none;
+    border: 3px solid #f594a2;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+/*album*/
+#album_list{
+    width:900px;
+    margin-left: auto;
+  	margin-right: auto;
+}
+#album_list p{
+    font-size:14px;
+}
+#album_list .list_li{
+    display:inline-block;
+    margin: 0px 22px 30px;
+    text-align: center;
+}
+.album_title{
+    width:250px;
+    color: #f594a2;
+    font-weight: 700;
+    margin-bottom:10px;
+    padding-bottom:5px;
+    border-bottom: 2px solid #f594a2;
+}
+.album_img{
+    width:250px;
+}
+ol{margin:0; padding-left:15px;}
+.track_list{
+    display: inline-block;
+    text-align:left;
+    line-height: 150%;
+    font-size:14px;
+    margin-top:20px;
+    font-family:'Montserrat', sans-serif, 'Malgun Gothic','맑은 고딕';
+}
+.track_title{
+    color:#aa85e6;
+}
+/*video*/
+.vid{
+    margin-top: 60px;
+}
+.music_vid{
+    display:inline-block;
+    margin: 0px 10px 40px;
+}
+.vid_title{
+    color:#f594a2;
+    font-weight: 700;
+    font-size: 20px;
+}
+/*comment*/
+.comment{
+    margin-top: 60px;
+}
+#comment_title{
+    color:#f594a2;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.comment input{
+    font-size: 15px;
+}
+#comment_box{
+    width: 70%;
+    height: 800px;
+    border: 3px solid #f594a2;
+    margin: 30px auto 30px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    text-align: justify;
+    overflow-y: scroll;
+}
+#comment_box::-webkit-scrollbar{
+    background-color:#f594a266;
+    border-radius:10px;
+    box-shadow:inset 0px 0px 5px white;
+    width:15px;
+}
+#comment_box::-webkit-scrollbar-thumb{
+	background-color:#f594a2;
+    border-radius:10px;
+    background-clip:padding-box;
+    border:3px solid transparent;
+}
+
+```

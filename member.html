@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="extern.css"/>
+    <link rel="stylesheet" type="text/css" href="about.css"/>
+  	<title>OH MY GIRL</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	function x(){
+            var box = document.getElementById("personal_sns_list");
+            box.style.display="none";
+            var sns = document.getElementById("sns_menu");
+            sns.style.display="inline-block";
+        }
+        function menu_on(){
+            var sns = document.getElementById("sns_menu");
+            sns.style.display="none";
+            var box = document.getElementById("personal_sns_list");
+            box.style.display="inline-block";
+        }
+        function alt(id){
+            var name = id.innerText;
+            alert(name+'의 개인 SNS가 없습니다.');
+        }
+    </script>
+    <!--헤더부분-->
+    <header>
+        <h1>OH MY GIRL</h1>
+        <nav class="menu">
+            <ul>
+                <li class="inactive"><a href="index.html">MAIN</a></li>
+                <li class="inactive"><a href="about.html">ABOUT</a></li>
+                <li class="active"><a href="#">MEMBER</a></li>
+                <li class="inactive"><a href="album.html">ALBUM</a></li>
+                <li class="inactive"><a href="video.html">VIDEO</a></li>
+                <li class="inactive"><a href="comment.html">COMMENT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--article부분-->
+    <article>
+    	<section class="member">
+            <ul id="pro_list">
+                <li>
+                	<img src="http://ohmy-girl.com/omg_official/img/gallery/gallery_hyojung.png" alt="" class="pro_img">
+                    <p class="name">효정 &nbsp;HYOJUNG</p>
+                    <div class="pro_info">
+                        <p><span>PART</span> Lead Vocal, Leader</p>
+                        <p><span>BIRTHDAY</span> 94.07.28</p>
+                        <p><span>BLOOD TYPE</span> AB형</p>
+                        <p><span>STAR SIGN</span> 사자자리</p>
+                    </div>
+                </li>
+                <li>
+                	<img src="http://ohmy-girl.com/omg_official/img/gallery/gallery_mimi.png" alt="" class="pro_img">
+                    <p class="name">미미 &nbsp;MIMI</p>
+                    <div class="pro_info">
+                        <p><span>PART</span> Rap</p>
+                        <p><span>BIRTHDAY</span> 95.05.01</p>
+                        <p><span>BLOOD TYPE</span> AB형</p>
+                        <p><span>STAR SIGN</span> 황소자리</p>
+                    </div>
+                </li>
+                <li>
+                	<img src="http://ohmy-girl.com/omg_official/img/gallery/gallery_yooa.png" alt="" class="pro_img">
+                    <p class="name">유아 &nbsp;YOOA</p>
+                    <div class="pro_info">
+                        <p><span>PART</span> Vocal</p>
+                        <p><span>BIRTHDAY</span> 95.09.17</p>
+                        <p><span>BLOOD TYPE</span> A형</p>
+                        <p><span>STAR SIGN</span> 처녀자리</p>
+                    </div>
+                </li>
+                <li>
+                	<img src="http://ohmy-girl.com/omg_official/img/gallery/gallery_seunghee.png" alt="" class="pro_img">
+                    <p class="name">승희 &nbsp;SEUNGHEE</p>
+                    <div class="pro_info">
+                        <p><span>PART</span> Lead Vocal</p>
+                        <p><span>BIRTHDAY</span> 96.01.25</p>
+                        <p><span>BLOOD TYPE</span> B형</p>
+                        <p><span>STAR SIGN</span> 물병자리</p>
+                    </div>
+                </li>
+                <li>
+                	<img src="http://ohmy-girl.com/omg_official/img/gallery/gallery_jiho.png" alt="" class="pro_img">
+                    <p class="name">지호 &nbsp;JIHO</p>
+                    <div class="pro_info">
+                        <p><span>PART</span> Vocal</p>
+                        <p><span>BIRTHDAY</span> 97.04.04</p>
+                        <p><span>BLOOD TYPE</span> A형</p>
+                        <p><span>STAR SIGN</span> 양자리</p>
+                    </div>
+                </li>
+                <li>
+                	<img src="http://ohmy-girl.com/omg_official/img/gallery/gallery_binnie.png" alt="" class="pro_img">
+                    <p class="name">비니 &nbsp;BINNIE</p>
+                    <div class="pro_info">
+                        <p><span>PART</span> Vocal</p>
+                        <p><span>BIRTHDAY</span> 97.09.09</p>
+                        <p><span>BLOOD TYPE</span> O형</p>
+                        <p><span>STAR SIGN</span> 처녀자리</p>
+                    </div>
+                </li>
+                <li>
+                	<img src="http://ohmy-girl.com/omg_official/img/gallery/gallery_arin.png" alt="" class="pro_img">
+                    <p class="name">아린 &nbsp;ARIN</p>
+                    <div class="pro_info">
+                        <p><span>PART</span> Vocal</p>
+                        <p><span>BIRTHDAY</span> 99.06.18</p>
+                        <p><span>BLOOD TYPE</span> O형</p>
+                        <p><span>STAR SIGN</span> 쌍둥이자리</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </article>
+    <!--aside부분-->
+    <aside id="side_menu">
+        <p id="sns_menu" onclick="menu_on();">SNS</p>
+    	<ul id="personal_sns_list">
+            <div onclick="x();" style="cursor:pointer;">
+                <img id="xbtn" src="images/x.png" align="right">
+            </div>
+            <li><p class="name">PERSONAL SNS</p></li>
+            <li><a href="https://www.instagram.com/candyz_hyojung/" target="_blank">효정</a></li>
+            <li><a href="https://www.youtube.com/channel/UCqxW9ag8rCtIMfAHvOIEIQA/about" target="_blank">미미</a></li>
+            <li><a href="https://www.instagram.com/yoo__sha/" target="_blank">유아</a></li>
+            <li><a href="javascript:void(0);" onclick="alt(this);">승희</a></li>
+            <li><a href="javascript:void(0);" onclick="alt(this);">지호</a></li>
+            <li><a href="javascript:void(0);" onclick="alt(this);">비니</a></li>
+            <li><a href="https://www.instagram.com/ye._.vely618/" target="_blank">아린</a></li>
+        </ul>
+    </aside>
+    <!--footer부분-->
+    <footer>
+        <p>© Made by Arim | Sookmyung Women's University</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="extern.css"/>
+    <link rel="stylesheet" type="text/css" href="about.css"/>
+  	<title>OH MY GIRL</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	function comm(){
+            var c = document.getElementById("comments");
+            var comment = c.value;
+            c.value = "";
+            var box = document.getElementById("comment_box");
+            var newDiv = document.createElement('p');
+            newDiv.innerText = comment;
+            box.appendChild(newDiv);
+        }
+        function keyup(){
+            if(window.event.keyCode == 13){
+                comm();
+            }
+        }
+    </script>
+    <!--헤더부분-->
+    <header>
+        <h1>OH MY GIRL</h1>
+        <nav class="menu">
+            <ul>
+                <li class="inactive"><a href="index.html">MAIN</a></li>
+                <li class="inactive"><a href="about.html">ABOUT</a></li>
+                <li class="inactive"><a href="member.html">MEMBER</a></li>
+                <li class="inactive"><a href="album.html">ALBUM</a></li>
+                <li class="inactive"><a href="video.html">VIDEO</a></li>
+                <li class="active"><a href="#">COMMENT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--article부분-->
+    <article>
+    	<section class="comment">
+            <p id="comment_title">MESSAGE TO 'OH MY GIRL'</p>
+            <form onsubmit="return false;">
+                <input type="text" size="100" id="comments" value="" onkeyup="keyup();">
+                <input id="comment_button" type="button" value="확인" onclick="comm();">
+            </form>
+            <div id="comment_box"></div>
+        </section>
+    </article>
+    <!--footer부분-->
+    <footer>
+    	<p>© Made by Arim | Sookmyung Women's University</p>
+    </footer>
+</body>
+</html>
